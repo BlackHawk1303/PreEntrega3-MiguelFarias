@@ -1,0 +1,22 @@
+.card-body {
+    color: #A569BD;
+    background-color: black;
+}
+.card-margen
+{
+    margin: 50px;
+}
+.btn-card
+{
+    @extend .btn;
+    background-color: rgb(127, 234, 255) !important;
+    text-decoration: underline !important;
+}
+.text-muted
+{
+    color: azure !important;
+}
+.card-footer
+{
+    text-align: center;
+}

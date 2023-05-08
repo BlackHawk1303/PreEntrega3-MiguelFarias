@@ -1,0 +1,101 @@
+#Diseño, #Front-End, #Back-End, #Soporte-TI, .card-Diseño, 
+.card-Front-End, .card-Back-End, .card-Soporte-TI{
+    display: none;
+}
+
+#Diseño:checked ~ .container-cards .card-Diseño,
+#Front-End:checked ~ .container-cards .card-Front-End,
+#Back-End:checked ~ .container-cards .card-Back-End,
+#Soporte-TI:checked ~ .container-cards .card-Soporte-TI 
+{
+    /*display: flex;*/
+    display: grid;
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio-chico;
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;    
+    }
+}
+
+@media (min-width: $desktopXG) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+}
+
+.card-body {
+    @include flex-columna;
+    color: $color-primario;
+}
+
+/*REVISAR*/
+.container-opciones {
+    @include flex-columna;
+    gap: $espacio-chico;
+}
+
+@media (min-width: $tablet) {
+    .container-opciones {
+        @include flex-fila-centrado;
+    }
+}
+
+/*
+.container-cards {
+    @include flex-columna;
+    gap: $espacio-medio;
+    margin-top: $espacio-grande;
+}
+*/
+
+.container-opciones label {
+    @extend .btn;
+
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: $fuente-chica;
+
+    &:hover {
+        background-color: $color-terciario;
+        color: $color-primario
+    }
+}
+
+.card-body {
+    @include flex-columna;
+    color: $color-primario;
+}
+
+.btn-card {
+    @extend .btn;
+    background-color: $color-primario;
+    color: $color-terciario;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-terciario;
+        color: $color-primario;
+    }
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    /*align-items: center;*/
+    gap: 40px;
+    margin-top: 60px;
+  }

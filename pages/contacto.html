@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, formulario, respuesta, profesional">
+    <meta name="description" content="Para contactarme completa el formulario">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobremi.html">Sobre Mí</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="conocimiento.html">Conocimiento</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="experiencia.html">Experiencia</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Prueba-->
+        <nav>
+            <img src="/img/hellfish.png" alt="#" class="class-icono">
+        </nav>
+        <!--Prueba-->
+            </div>
+   
+        </nav>
+    </header>
+    <section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/codigoweb.png" class="d-block w-100" alt="Código Web">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/proyecto1.png" class="d-block w-100" alt="Proyecto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/proyecto2.png" class="d-block w-100" alt="Proyecto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/proyecto3.png" class="d-block w-100" alt="Proyecto 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section>
+        <h1>Contáctame</h1>
+        <p class="parrafo-contacto">Para contactarme y entregar una respuesta rapida, profesional y a la brevedad llena el siguiente formulario y dejame tu mensaje</p>
+    </section>
+    <main class="main-contacto container">
+        <form>
+            <h3 class="text-center">Formulario</h3>
+            <div class="campos">
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" placeholder="Ej: Lorem Ipsum" required>
+            </div>
+            <div class="campos">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" placeholder="Ej: lorem.ipsum@gmail.com" required>
+            </div>
+            <div class="campos">
+                <label for="telf">Número de contacto</label>
+                <input type="tel" id="telf">
+            </div>
+            <div class="campos">
+                <label for="mensaje">Deja tu mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar formulario" class="botones-form">
+            <input type="reset" value="Limpiar formulario" class="botones-form">
+        </form>
+        <div class="container-mapa">
+            <h3 class="text-center">¿De dónde soy? Santiago de Chile.</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.9580936800307!2d-70.78032101996222!3d-33.50246740470247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c2d1e83f8f95%3A0x57038dfc2c99ebfc!2sEl%20Olimpo%202807%2C%20Maip%C3%BA%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1683412681056!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+        </div>
+    </main>
+    <section class="container">
+        <h2>¿Quieres contactarme? ¿Necesitas mis servicios?</h2>
+        <p>Llena el anterior formulario para poder comunicarme contigo</p>
+    </section>
+    <footer class="container">
+        <h3>Sígueme en mis redes sociales</h3>
+        <div class="container-redes">
+            <a href="#" target="_blank">
+                <iconify-icon icon="mdi:instagram"></iconify-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-farias-garcia-b050aa263/" target="_blank">
+                <iconify-icon icon="mdi:linkedin"></iconify-icon>
+            </a>
+            <a href="#" target="_blank">
+                <iconify-icon icon="ic:baseline-whatsapp"></iconify-icon>
+            </a>
+        </div>
+        <p class="creditos">
+            <img src="/img/hellfish.png" alt="#" class="class-icono-footer">
+            Sitio/Portafolio &copy; Creado por MiguelFarias.
+            <img src="/img/hellfish.png" alt="#" class="class-icono-footer">
+            </p>    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+</body>
+</html>

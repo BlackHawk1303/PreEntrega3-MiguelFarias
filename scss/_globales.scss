@@ -1,0 +1,95 @@
+body {
+    font-family: $fuente-principal;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+.nav-link,
+.navbar-nav .nav-link.active {
+    color: $color-secundario;
+
+    &:hover {
+        color: $color-terciario;
+    }
+}
+
+.navbar-toggler {
+    background-color: $color-terciario;
+}
+.carousel-inner
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.carousel-item img {
+    height: 250px;
+    border-radius: 50px;
+}
+
+@media (min-width: $tablet) {
+    .carousel-item img {
+        height: 55vh;
+    }
+}
+
+@media (min-width: $desktop) {
+    .carousel-item img {
+        height: 65vh;
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: $espacio-medio;
+}
+h1
+{
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    font-size: $fuente-media;
+}
+
+.texto-desc {
+    margin-top: $espacio-chico;
+}
+
+footer {
+    margin-top: $espacio-grande;
+    @include flex-columna;
+
+    .container-redes a {
+        color: $color-terciario;
+        text-decoration: none;
+        font-size: $icono-chico;
+    }
+}
+
+.btn {
+    border: solid 1px $color-secundario;
+    width: 200px;
+    text-align: center;
+    padding: 5px $espacio-chico;
+    border-radius: 10px;
+}
+.creditos
+{
+    font-size: $fuente-chica;
+    color: $color-terciario;
+}
+.class-icono
+{
+    width: 3rem;
+    right: 0%;
+    /*left: 3px;*/
+    position: relative;
+}
+.class-icono-footer
+{
+    width: 2rem;
+    right: 0%;
+    /*left: 3px;*/
+    position: relative;
+}
